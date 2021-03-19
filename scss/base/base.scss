@@ -1,0 +1,88 @@
+/* header styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  fill: currentColor;
+  font-family: $font-family-base;
+
+  @media (min-width: 30rem) {
+    font-size: 0.875rem;
+    font-size: calc(0.5rem + 1.25vw);
+  }
+
+  @media (min-width: 40rem) {
+    font-size: 1rem;
+    font-size: calc(0.77273rem + 0.56818vw);
+  }
+
+  @media (min-width: 62rem) {
+    font-size: 1.125rem;
+    font-size: calc(0.71711rem + 0.65789vw);
+  }
+
+  @media (min-width: 81rem) {
+    font-size: 1.25rem;
+  }
+}
+
+.container {
+  max-width: 81rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+
+  @media (min-width: 62rem) {
+    padding-right: calc(-1.26316rem + 5.26316vw) !important;
+    padding-left: calc(-1.26316rem + 5.26316vw) !important;
+  }
+}
+
+h1 {
+	margin-bottom: .25em;
+	margin-top: .5em;
+	text-align: center;
+  font-size: 1.75rem;
+  
+  @media (min-width:30rem) {
+		font-size: 1.75rem;
+		font-size: calc(1rem + 2.5vw);    
+  }
+
+  @media (min-width:40rem) {
+		font-size: 2rem;
+		font-size: calc(1.28977rem + 1.77557vw);    
+  }
+
+  @media (min-width:62rem) {
+		font-size: 2.39063rem;
+		font-size: calc(1.01398rem + 2.22039vw);    
+  }  
+
+  @media (min-width:81rem) {
+		font-size: 2.8125rem;    
+  }
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 1.125em;
+}
+
+h6 {
+	font-size: 1.0625em;
+}

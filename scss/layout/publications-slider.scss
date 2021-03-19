@@ -1,0 +1,207 @@
+/** publications slider */
+.paragraph-publications {
+  padding-top: 30px;
+  padding-bottom: 30px;
+ 
+  .paragraph--type--publications {
+    .field--name-field-headline {
+      text-align: center;
+      font-size: 1.75em;
+      font-weight: 600;
+      margin:  0 0 .5em 0;
+    }
+    .field--name-field-subheadline {
+      text-align: center;
+      max-width: 80%;
+      margin: auto;
+    }
+    .field--name-field-publication {
+      .viewsreference--view-title {
+        display: none;
+      }
+    }
+    .view-publications  {
+      padding-top: 30px;
+      position: relative;
+
+      .slick-slide {
+        @media (min-width: 62rem) {
+          padding: 0 .5em;
+        }
+        .views-row {
+          color: #fff;
+          height: 100%;
+          margin: 0 auto;
+          position: relative;
+          text-align: center;
+        }
+
+        &:hover {
+          .views-field-nothing {
+            opacity: 1;
+          }
+        }
+      }
+      .views-field-field-publication-image {
+        text-align: center;
+        img {
+          max-width: 100%;
+          margin: auto;
+        }
+      }
+      .intro-title {
+        a {
+          font-size: 1.25em;
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .actions {  
+        a {
+          background-color: transparent;
+          border: 1px solid;
+          border-radius: 1em;
+          color: #fff;
+          cursor: pointer;
+          display: inline-block;
+          fill: none;
+          font-size: .875em;
+          line-height: 1.25;
+          margin-bottom: .25em;
+          margin-top: .25em;
+          padding: .375em 1em .25em;
+          stroke: currentColor;
+          text-transform: uppercase;
+          font-family: inherit;
+          width: auto;
+          display: inline-block;
+  
+          &:hover,
+          &:focus {
+            background-color: #06c;
+            color: #fff;
+            border-color: #06c;
+            text-decoration: none;
+          }
+        }
+      }
+      .views-field-nothing {
+        padding: 1em;
+      }
+      @media (min-width: 62rem) {
+        .views-field-nothing {
+          background-color: rgba(0,0,0,0.5);
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          height: 100%;
+          -webkit-box-pack: center;
+          justify-content: center;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          -webkit-transition: opacity 0.25s ease-in-out;
+          transition: opacity 0.25s ease-in-out;
+          width: 100%;
+        }
+      }
+
+      .button {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 1em;
+        cursor: pointer;
+        display: inline-block;
+        fill: none;
+        font-size: .875em;
+        line-height: 1.25;
+        margin-bottom: .25em;
+        margin-top: .25em;
+        padding: .375em 1em .25em;
+        stroke: currentColor;
+        text-transform: uppercase;
+        font-family: inherit;
+        width: auto;
+
+        &:hover {
+          background-color: #06c;
+          border-color: #06c;
+          text-decoration: none;
+        }
+      }
+      .icon-svg {
+        font-size: 3em;
+        width: 1em;
+        height: 1em;
+        @media (min-width: 40rem) {
+          font-size: 7em;
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+      .slick-arrow {
+        font-size: 1em;
+        z-index: 99;
+        color: #fff;
+        border: 0;
+        border-radius: 50%;
+        height: 42px;
+        pointer-events: auto;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 42px;
+      }
+      @media (min-width: 40rem) {
+        .slick-arrow {
+          background-color: transparent;
+          border: 0 none;
+          border-radius: 0;
+          color: #eee;
+          display: block;
+          fill: currentColor;
+          font-size: 1em;
+          height: 100%;
+          margin: 0;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          stroke: #ddd;
+          top: 50%;
+          width: 20%;
+          z-index: 100;
+        }
+      }      
+      .slick-arrow.slick-prev {
+        left: 0;
+      }
+      .slick-arrow.slick-next {
+        right: 0;
+      }
+    }
+  }
+}

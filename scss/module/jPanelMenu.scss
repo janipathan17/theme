@@ -1,0 +1,134 @@
+/* jPanel Menu styles */
+#jPanelMenu-menu {
+  background-color: #000;
+  color: #fff;
+  transition: width 0.25s ease-in-out;
+  z-index: 99 !important;
+
+  @media (max-width: 650px) {
+    width: 100% !important;
+  }
+
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .region-top-header {
+    margin: 0;
+  }
+
+  .header-top {
+    align-items: center;
+    background-color: #616265;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .25em 0;
+
+    .top-search {
+      width: 44%;
+      display: block;
+      min-width: auto;
+      margin-left: 0;
+      .search-form {
+        .form-group {
+          .form-search {
+            border-bottom: 1px solid #fff;
+          }
+          .form-submit {
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .follow-links {
+      display: block;
+      font-size: 1.25em;
+
+      .follow-list {
+        .follow-link {
+          &:hover {
+            background-color: #fff;
+            color: #616265;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .top-navigation {
+    background-color: transparent;
+    display: block;
+
+    .region-top-navigation {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 1px 1em;
+
+      nav {
+        >ul {
+          margin-top: 30px;
+
+          li {
+            width: 100%;
+            font-weight: bold;
+            padding: .5em 0;
+            text-transform: uppercase;
+            background-color: transparent;
+
+            &:hover {
+              background-color: transparent;
+            }
+
+            a {
+              text-align: left;
+              color: #fff;
+              background-color: transparent;
+
+              &:hover {
+                color: #06c;
+                background-color: transparent;
+              }
+            }
+            .dropdown-menu {
+              position: relative !important;
+              background-color: transparent;
+              border-radius: 0;
+              border: none;
+              transform: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .navigation-trigger,
+  .navbar-expand-lg,
+  h1.logo {
+    display: none;
+  }
+}
+
+.jpanel-menu-open {
+  .navigation-trigger {
+    .navicon-list {
+      li {
+        &.navicon-close {
+          display: block;
+        }
+        &.navicon-menu {
+          display: none;
+        }
+      }
+    }
+  }
+}

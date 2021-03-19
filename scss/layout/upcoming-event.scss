@@ -1,0 +1,104 @@
+/* upcoming event styles */
+.paragraph-components {
+  padding-top: 30px;
+  padding-bottom: 30px;
+ 
+  .paragraph--type--upcoming-events {
+    .field--name-field-headline {
+      text-align: center;
+      font-size: 1.75em;
+      font-weight: 600;
+      margin: 1em 0 .5em;
+    }
+    .field--name-field-subheadline {
+      text-align: center;
+    }
+    .field--name-field-event-dis {
+      padding-top: 30px;
+      display: flex;
+
+      .field--item {
+        padding: .5em;
+        text-align: center;
+        flex: 1;
+        .item-group {
+          border-bottom: 0.5em solid #6c3a77;
+          color: #616265;
+          display: block;
+          height: 100%;
+          padding: 1em .5em;
+          text-align: center;
+
+          &:hover {
+            background-color: #eee;
+          }
+          .viewsreference--view-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            display: none;
+          }
+          a {
+            color: #06c;
+            &:hover {
+              color: #20558a;
+              text-decoration: none;
+            }
+          }
+          .view-event {
+            padding-top: 10px;
+            font-size: 0.8em;
+            .views-row {
+              position: relative;
+              .views-field-field-icon {
+                padding-bottom: 20px;
+                text-align: center;
+                display: none;
+                img {
+                  max-width: 100%;
+                  vertical-align: middle;
+                }
+              }
+              .views-field-field-event-type {
+                text-transform: uppercase;
+                font-weight: 500;
+                padding-bottom: 10px;
+                display: none;
+                a {
+                  color: #616265;
+                  font-size: 1.5em;
+                }
+              }
+              &:first-child {
+                padding-top: 0 !important;
+                margin-top: 0 !important;
+                &::before {
+                  display: none;
+                }
+                .views-field-field-icon {
+                  display: block;
+                }
+                .views-field-field-event-type {
+                  display: block;
+                }
+              }
+              &:last-child {
+                padding-top: 15px;
+                margin-top: 15px;
+                &::before {
+                  position: absolute;
+                  content: '';
+                  left: 50%;
+                  top: 0;
+                  width: 200px;
+                  height: 1px;
+                  background-color: rgba(0,0,0,0.1);
+                  margin-left: -100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

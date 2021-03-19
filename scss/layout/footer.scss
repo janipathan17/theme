@@ -1,0 +1,246 @@
+/* footer styles */
+
+/** navigation styles **/
+.footer-navigation {
+  width: 100%;
+
+  .navbar-nav,
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    li {
+      flex: 1 1 auto;
+      padding: .5em;
+      
+      a {
+        &::after {
+          display: none;
+        }
+      }
+
+      .nav-link {
+        font-size: 0.875rem;
+        color: #616265;
+        line-height: 1.25;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: #06c;
+        }
+      }
+
+      .dropdown-menu {
+        display: block !important;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+          
+          a {
+            font-size: 0.875rem;
+            background-color: transparent;
+            color: #616265;
+            display: inline-block;
+            line-height: 1.25;
+            padding: .125em 0;
+            text-decoration: none;
+            white-space: normal;
+
+            &:hover,
+            &:focus {
+              color: #06c;
+              background-color: transparent;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/** print and share styles **/
+.footer-second {
+  background-color: #333;
+  color: #fff;
+
+  .bottom-share-links {
+    width: 100%;
+  }
+
+  .share-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5em 0;
+
+    li {
+      display: inline-block;
+      padding: .5em;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        fill: none;
+        stroke: currentColor;
+
+        &:hover,
+        &:focus {
+          fill: currentColor;
+          stroke: none;
+        }
+
+        .icon-svg {
+          font-size: 1.5em;
+          height: 1em;
+          vertical-align: middle;
+          width: 1.25em;
+        }
+      }
+
+      .share-label {
+        display: inline-block;
+        padding-right: .5em;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+/** subscribe section styles **/
+.footer-first {
+  background-color: #eee;
+  padding: 2.5em 0;
+
+  .subscribe {
+    width: 100%;
+  }
+
+  .subscribe-promo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 -1em;
+
+    .subscribe-promo-item {
+      padding: .5em 1em;
+
+      .subscribe-promo-title {
+        margin: 0;
+      }
+
+      a {
+        border: 1px solid #333;
+        border-radius: 1em;
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1.25;
+        margin-bottom: .25em;
+        margin-top: .25em;
+        padding: .375em 1em .25em;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+          background-color: #06c;
+          color: #fff;
+          border-color: #06c;
+        }
+      }
+    }
+  }
+}
+
+/** Gov logos and bottom links styles **/
+.region-footer-fourth {
+  display: flex;
+}
+
+.gov-logos-block {
+  .gov-list {
+    list-style-type: none;
+    margin: 0 -1em;
+    padding: .5em 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: .5em 1em;
+
+      a {
+        color: #616265;
+        fill: currentColor;
+        stroke: none;
+
+        &:hover {
+          color: #333;
+        }
+      }
+
+      .icon-svg {
+        font-size: 3.5em;
+        height: 1em;
+        vertical-align: middle;
+        width: 1em;
+      }
+      .icon-usa {
+        width: 2.6em;
+      }
+    }
+  }
+}
+
+
+/** footer links **/
+.footer-links {
+  margin-left: auto;
+
+  .navbar-nav,
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 -.5em;
+    padding: .75em 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: .25em .5em;
+
+      a {
+        color: #616265;
+        font-size: 0.875rem;
+
+        &:hover {
+          color: #06c;
+        }
+      }
+    }
+  }
+}

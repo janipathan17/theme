@@ -1,0 +1,21 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+// typography
+@import "typography";
+//bootstrap
+@import "bootstrap";
+//material design bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
+// mixins
+@import "mixins";
+@import "base/base.scss";
+@import "layout/header.scss";
+@import "layout/hero-slider.scss";
+@import "layout/upcoming-event.scss";
+@import "layout/publications-slider.scss";
+@import "layout/links-card.scss";
+@import "layout/footer.scss";
+@import "module/jPanelMenu.scss";

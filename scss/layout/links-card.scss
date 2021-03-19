@@ -1,0 +1,120 @@
+/* links card styles */
+.paragraph--type--links-card-group {
+  padding-top: 50px;
+
+  .field--name-field-headline {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin:  0 0 .5em 0;
+  }
+  .field--name-field-subheadline {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.paragraph-links-cards {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .cards-group {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    >div.field--item {
+      width: 33.333%;
+      padding: 15px;
+      @media (max-width: 767px) {
+        width: 50%;
+      }
+      @media (max-width: 460px) {
+        width: 100%;
+      }      
+    }
+  }
+  .paragraph-link-card {
+    background-color: #fff;
+    border: 3px solid #eee;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    .card-box {
+      .card-header {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+        color: #fff;
+        border-bottom: 3px solid #6c3a77;
+        position: relative;
+        min-height: 150px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-color: rgba(0,0,0,0.5);
+          z-index: 1;
+        }
+        .field--name-field-title {
+          position: relative;
+          z-index: 2;
+          font-weight: 500;
+        }
+      }
+      .card-body {
+        padding: 20px;
+        a {
+          font-size: 0.9em;
+          color: #06c;
+          text-decoration: none;
+          padding-bottom: 10px;
+          display: block;
+          &:hover {
+            color: #616265;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page_title {
+  padding-top: 20px;
+}
+.paragraph-accordion-group {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  >div.field--item {
+    padding-bottom: 10px;
+    .card {
+      .card-header {
+        padding: 0;
+        background-color: #fff;
+        background-image: url(../images/icons/down-arrow.png);
+        background-position: 98% 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        button {
+          display: block;
+          padding: 15px;
+          width: 100%;
+          text-align: left;
+          outline: none;
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 500;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
