@@ -17,8 +17,10 @@
 }
 
 .path-webform {
-  .layout-main-wrapper {
-    @extend .container;
+  .section {
+    .region-content {
+      @extend .container;
+    }
   }
 }
 
@@ -147,4 +149,8 @@
       color: #333;
     }
   }
+}
+
+.region-breadcrumb {
+  @extend .container;
 }
