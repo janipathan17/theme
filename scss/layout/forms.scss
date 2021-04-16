@@ -63,3 +63,88 @@
 .ui-datepicker {
   font-size: 16px;
 }
+
+
+/** alert **/
+.sitewide-alert {
+  /** Primary **/
+  &.alert-primary {
+    background-color: #06c;
+    border-color: #06c;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 15px;
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      color: #fff;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  /** warning **/
+  &.alert-warning {
+    background-color: #fff3cd;
+    border-color: #fff3cd;
+    color: #333;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 15px;
+    a {
+      font-weight: 600;
+      color: #333;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      color: #333;
+    }
+  }
+
+  /** notice **/
+  &.alert-notice {
+    background-color: #cff4fc;
+    border-color: #cff4fc;
+    color: #333;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 15px;
+    a {
+      font-weight: 600;
+      color: #333;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      color: #333;
+    }
+  }
+}
