@@ -1,0 +1,34 @@
+.breadcrumb {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  li+ li{
+    padding-left: 10px;
+
+    &::before {
+      float: left;
+      padding-right: .5rem;
+      color: #6c757d;
+      content: var(--bs-breadcrumb-divider, "/");
+    } 
+  }
+}
+
+.path-webform {
+  .layout-main-wrapper {
+    @extend .container;
+  }
+}
+
+.webform-submission-add-form {
+  max-width: 560px;
+  margin: auto;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  label {
+    font-weight: 500;
+  }
+}
