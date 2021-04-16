@@ -28,7 +28,38 @@
   font-size: 15px;
   padding-top: 10px;
   padding-bottom: 30px;
+
+  .webform-flexbox {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
   label {
     font-weight: 500;
   }
+  
+  .js-form-type-date {
+    position: relative;
+    display: inline-flex;
+
+    label {
+      padding-right: 5px;
+    }
+
+    .ui-datepicker-trigger {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -8px;
+    }
+  }
+
+  .form-actions {
+    display: inline-block;
+    min-width: 150px;
+  }
+}
+
+.ui-datepicker {
+  font-size: 16px;
 }
